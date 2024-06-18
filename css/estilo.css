@@ -85,11 +85,12 @@ p{
    display: inline-block;
    text-decoration: none;
    border-bottom: 3px solid hsl(69, 76%, 81%);
-   color: black;
+   color: white;
 }
 
 nav ul li a:hover{
-    background-color: white;
+    background-color: black;
+    border-radius: 5px;
 }
 }
 .menu-icon{
@@ -99,13 +100,24 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
+menu-toggle{
+    display: none;
+}
+
+@media (max-widht: 768 px)
+.menu-icon {
+    display: block;
+    padding-right: 10px;
+}
 
 /* Classe Atribuida para a div que vai receber o logotipo */.logo{
     background-color: black;
 }
 
-nav{
-    background-color:white;
+nav ul{
+    display:none
+    flex-direction: colum;
+    width: 100%;
 }
 
 main{
@@ -118,7 +130,7 @@ main{
 }
 
 section{
-    background-color: white;
+    background-color: black;
     padding: 5;
     
 }
@@ -168,4 +180,5 @@ h2{
     display: flex;
     justify-content: center;
 }
+
 
